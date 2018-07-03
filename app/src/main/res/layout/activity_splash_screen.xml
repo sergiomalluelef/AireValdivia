@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout1"
+    tools:context="com.example.samsung.tablayout.SplashScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="60dp"/>
+
+        <TextView
+            android:layout_marginTop="-100dp"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/animation_view"
+            android:shadowColor="#8a6603"
+            android:shadowDx="3"
+            android:shadowDy="2"
+            android:shadowRadius="1.8"
+            android:text="AireValdivia"
+            android:textAlignment="center"
+            android:textColor="#666666"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/progressBar"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:visibility="visible" />
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/buttoniniciar"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+</RelativeLayout>

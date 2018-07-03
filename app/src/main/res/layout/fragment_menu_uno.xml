@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/anim_carga">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true"
+                android:ems="15"
+                android:longClickable="true"
+                android:padding="10dp"
+                android:scrollbars="vertical"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorLetras" />
+
+            <TextView
+                android:id="@+id/aire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:drawSelectorOnTop="true"
+                android:ems="15"
+                android:longClickable="true"
+                android:padding="10dp"
+                android:scrollbars="vertical"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorLetras" />
+
+            <TextView
+                android:id="@+id/recomendaciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="54dp"
+                android:drawSelectorOnTop="true"
+                android:ems="15"
+                android:longClickable="true"
+                android:padding="10dp"
+                android:scrollbars="vertical"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorLetras" />
+
+            <TextView
+                android:id="@+id/zona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="54dp"
+                android:drawSelectorOnTop="true"
+                android:ems="15"
+                android:longClickable="true"
+                android:padding="10dp"
+                android:scrollbars="vertical"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorLetras" />
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_no_hay_datos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"/>
+
+    </FrameLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>
