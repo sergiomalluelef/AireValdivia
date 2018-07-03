@@ -30,6 +30,7 @@
             android:shadowDy="2"
             android:shadowRadius="1.8"
             android:text="AireValdivia"
+
             android:textAlignment="center"
             android:textColor="#666666"
             android:textSize="50sp"
